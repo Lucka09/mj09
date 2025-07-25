@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "allowJs": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@pages/*": ["./pages/*"],
+      "@components/*": ["./components/*"],
+    },
+    "jsx": "react-jsx", 
+
+    // Define a qué versión de JavaScript se compilará tu código. 'ES2020' o 'ESNEXT' son buenas opciones modernas.
+    "target": "ES2020", 
+
+    // Especifica el sistema de módulos. 'commonjs' es común para Node.js, 'ESNext' para frontend con bundlers.
+    "module": "ESNext", 
+
+    // Define cómo se resuelven los módulos. 'node' es el estándar.
+    "moduleResolution": "node",
+
+    // Genera archivos de declaración de tipos (.d.ts) para tus archivos TypeScript. Crucial para que JS pueda importar TS.
+    "declaration": true, 
+
+    // Directorio donde se guardarán los archivos JavaScript compilados. Mantiene tu código fuente limpio.
+    "outDir": "./dist", 
+
+    // Permite una mejor interoperabilidad entre módulos CommonJS y ES Modules.
+    "esModuleInterop": true, 
+
+    // Omite la comprobación de tipos de los archivos de declaración de bibliotecas.
+    "skipLibCheck": true, 
+
+    // Fuerza que los nombres de archivo en las importaciones coincidan con el sistema de archivos.
+    "forceConsistentCasingInFileNames": true,
+
+    // Habilita un conjunto de comprobaciones estrictas para una mayor seguridad de tipos. ¡Muy recomendado!
+    "strict": true 
+  },
+  // Especifica qué archivos incluir en la compilación.
+  "include": ["src/**/*"], 
+
+  // Especifica qué archivos y directorios excluir.
+  "exclude": ["node_modules", "dist"] 
+}
